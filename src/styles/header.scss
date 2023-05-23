@@ -1,0 +1,73 @@
+.header {
+  background-color: $primary_color;
+  padding: 1rem;
+
+  > section {
+    &:first-of-type {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      > div {
+        > a {
+          > svg {
+            color: $white_color;
+            font-size: 2rem;
+          }
+        }
+        &:first-of-type {
+          width: 50%;
+          display: flex;
+          align-items: center;
+
+          > input {
+            color: $white_color;
+            font-size: 1.2rem;
+            padding: 5px 15px;
+            width: 100%;
+            border: 2px solid $white_color;
+            border-radius: 10px;
+            background-color: transparent;
+          }
+        }
+        &:last-of-type {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+    }
+
+    &:last-of-type {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      > form {
+        width: 50%;
+        background-color: $white_color;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 20px;
+        > svg {
+          font-size: 1.8rem;
+          color: $primary_color;
+        }
+
+        > input {
+          border: none;
+          padding: 5px;
+          width: 100%;
+          outline: none;
+          font-size: 1.2rem;
+        }
+      }
+      > a {
+        > svg {
+          color: $white_color;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

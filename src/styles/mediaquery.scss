@@ -1,0 +1,62 @@
+@media screen and (max-width: 700px) {
+  //Header Section
+  .header {
+    > section {
+      &:first-of-type {
+        gap: 1rem;
+        > div {
+          &:first-of-type {
+            width: 100%;
+          }
+          &:last-of-type {
+            gap: 0.6rem;
+          }
+        }
+      }
+
+      &:last-of-type {
+        gap: 1rem;
+        > form {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //Home Section
+  .home {
+    padding: 1rem;
+
+    > .slider {
+      > div {
+        img {
+          height: 50vh;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  //Home Section
+  .home {
+    padding: 1rem;
+
+    > .slider {
+      > div {
+        img {
+          height: 40vh;
+        }
+      }
+    }
+    > .item_container {
+      > a {
+        width: calc(25%);
+        > svg {
+          font-size: 3rem;
+          color: $primary_color;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
